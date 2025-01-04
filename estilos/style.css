@@ -3,5 +3,64 @@
 /*
     Paleta de cores
     Amarelo:
-    Rosa:
+    Roxo:
 */
+ 
+body {
+    background-image: linear-gradient(to top, hwb(61 16% 39%),#6232a6c9);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#login {
+    display: flex;
+    background-color: white;
+    position: absolute;
+    margin-top: 50%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+section#login div#formulario {
+    width: 300px;
+}
+
+section#login div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+section#login div#imagem {
+    margin-left: 10px;
+    order: 1;
+}
+
+section#login form {
+    display: flex;
+    flex-direction: column;
+}
+
+section#login form input {
+    margin: 2px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+section#login form #enter, #rec-senha {
+    background-color: rgb(128, 231, 44);
+} 
+section#login form #enter:hover, #rec-senha:hover {
+    background-color: rgb(60, 211, 30);
+}
+
+section#login img {
+    width: 30vh;
+    height: 20vh;
+}
