@@ -2,55 +2,56 @@
 
 /*
     Paleta de cores
-    Amarelo:
-    Roxo:
+    Amarelo: #9a9c29
+    Roxo: #6232a6c9
+    Verde:#66e385
 */
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
  
-body {
-    background-image: linear-gradient(to top, hwb(61 16% 39%),#6232a6c9);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100%;
+body, html {
+    background-color: #6232a6c9;
+    height: 100vh;
+    width: 100vw;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
 }
 
 section#login {
-    display: flex;
-    background-color: white;
     position: absolute;
-    margin-top: 50%;
-    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px, rgba(0, 0, 0, 0.479);
+}
+
+section#login  > div#imagem {
+    display: block;
+    background: #6232a6c9 url(../imagens/imagem.jpg) no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    height: 200px;
+    
+}
+
+section#login > div#formulario {
+    display: block;
     padding: 10px;
-}
-
-section#login div#formulario {
-    width: 300px;
-}
-
-section#login div {
-    display: inline-block;
-    vertical-align: top;
-}
-
-section#login div#imagem {
-    margin-left: 10px;
-    order: 1;
-}
-
-section#login form {
-    display: flex;
-    flex-direction: column;
-}
-
-section#login form input {
-    margin: 2px;
-    padding: 3px;
-    border-radius: 5px;
 }
 
 section#login form #enter, #rec-senha {
@@ -58,9 +59,4 @@ section#login form #enter, #rec-senha {
 } 
 section#login form #enter:hover, #rec-senha:hover {
     background-color: rgb(60, 211, 30);
-}
-
-section#login img {
-    width: 30vh;
-    height: 20vh;
 }
